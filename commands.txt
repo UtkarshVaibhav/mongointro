@@ -1,0 +1,23 @@
+1. use assignment //create database
+
+2. db.createCOllection //creating collection
+
+3. db.users.insert({"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"})
+
+4.  db.users.insertMany([{"first_name":"a","last_name":"last","email":"a@gmail.com","gender":"female","ip_address":"127.0.0.2","age":"24"},{"first_name":"b","last_name":"last","email":"b@gmail.com","gender":"male","ip_address":"127.0.0.3","age":"25"},{"first_name":"c","last_name":"lastc","email":"c@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"},{"first_name":"utkarsh","last_name":"vaibhav","email":"abc@gmail.com","gender":"male","ip_address":"127.0.0.1","age":"23"}])
+
+5. db.users.find({"first_name":"a"}).pretty()
+
+6. db.users.findOne({"first_name":"a"})
+
+7. db.users.update({"first_name":"a"},{$set:{"first_name":"updated a firstname"}})
+
+8. db.users.updateMany({"first_name":"utkarsh"},{$set:{"first_name":"updated utkarsh firstname using updateMany"}})
+
+9. db.users.remove({"first_name":"updated a firstname"},1)
+
+10. db.users.remove({"_id" : ObjectId("625cfba37bfc9b6ebd84eff9")})
+
+11. db.users.remove({"first_name" : "updated utkarsh firstname using updateMany"})
+
+12. db.dropDatabase()
